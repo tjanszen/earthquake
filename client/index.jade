@@ -5,6 +5,28 @@ html(lang='en')
     title Prototype
     link(rel='stylesheet', href='/style.css')
   body
-    h1 Hello, World
+    h1 Death by Zip Code
+    label Pick A Year
+    select#year
+      - for(var i = 1999; i < 2013; i++)
+        option= i
+    label Pick a Death
+    select#type
+      option htd
+      option can
+      option str
+      option cld
+      option inj
+      option pnf
+      option dia
+      option alz
+      option live
+      option sui
+      option hyp
+      option hom
+      option oth
+      
+    button#get-data Get Data
     script(src='/vendor/jquery/dist/jquery.js')
+    script(src='/vendor/lodash/lodash.js')
     script(src='/main.js')
